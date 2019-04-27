@@ -1,5 +1,12 @@
+# A tree grows 1 meter per year until it is 10 years old. Then it stops growing.
+# The orange tree cannot die until it reaches 50 years old.
+# After 50 years, the probability of dying increases each year.
+# No tree can live more than 100 years.
+# A tree will produce 100 fruits a year once it is more than 5 years old.
+# A tree will produce 200 fruits a year when it reaches 10 years old.
+# A tree will not produce fruits once it reaches 15 years old.
+
 class OrangeTree
-  # TODO: Implement all the specs defined in the README.md :)
   attr_reader :height, :living, :age, :fruits
   attr_writer :living, :age, :fruits, :height, :death_toll
 
@@ -51,7 +58,3 @@ class OrangeTree
     @fruits -= 1 if @fruits != 0
   end
 end
-
-
-
-
